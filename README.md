@@ -1,2 +1,5 @@
-# Course_U_basico_intermedio_C
-C# curso de JGG en la U
+# Proyectos hechos por mi
+
+Web site donde existen muchos iconos
+- https://www.flaticon.es/
+
