@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Frm_DataGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_DataGrid.Designer.cs">
+      <DependentUpon>Frm_DataGrid.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_interfaz.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +68,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frm_combobox.resx">
       <DependentUpon>frm_combobox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_DataGrid.resx">
+      <DependentUpon>Frm_DataGrid.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_interfaz.resx">
       <DependentUpon>frm_interfaz.cs</DependentUpon>

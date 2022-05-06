@@ -61,14 +61,18 @@ namespace FORMULARIO_MANTENIMIENTO
             txtDia.Text = DiaTexto;
         }
 
-        int Contador = 0;
+
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if (Contador <= 100)
+            if (progressBar1.Value < 100)
             {
-                Contador++;
-                txtConteo.Text = Contador.ToString();
+                progressBar1.Increment(1);
+                txtConteo.Text = progressBar1.Value.ToString();
+                //progressBar1.Value = Contador;
+                
             }
+
+            
         }
 
         private void txtIniciar_Click(object sender, EventArgs e)
@@ -79,6 +83,11 @@ namespace FORMULARIO_MANTENIMIENTO
         private void txtDetener_Click(object sender, EventArgs e)
         {
             timer1.Stop();
+        }
+
+        private void trackBar1_Scroll(object sender, EventArgs e)
+        {
+            lblPercent.Text = "Porcentaje " + trackBar1.Value.ToString() + "%";
         }
     }
 }

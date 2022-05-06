@@ -16,7 +16,7 @@ namespace FORMULARIO_MANTENIMIENTO
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frm_combobox());
+            Application.Run(new Frm_DataGrid());
         }
     }
 }

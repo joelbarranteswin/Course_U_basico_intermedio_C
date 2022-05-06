@@ -45,7 +45,10 @@
             this.txtDetener = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.trackBar1 = new System.Windows.Forms.TrackBar();
+            this.lblPercent = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -106,7 +109,7 @@
             this.txtResult.Multiline = true;
             this.txtResult.Name = "txtResult";
             this.txtResult.ReadOnly = true;
-            this.txtResult.Size = new System.Drawing.Size(188, 167);
+            this.txtResult.Size = new System.Drawing.Size(188, 98);
             this.txtResult.TabIndex = 5;
             // 
             // button1
@@ -205,13 +208,33 @@
             this.progressBar1.Location = new System.Drawing.Point(55, 302);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(200, 23);
+            this.progressBar1.Step = 100;
             this.progressBar1.TabIndex = 15;
+            // 
+            // trackBar1
+            // 
+            this.trackBar1.Location = new System.Drawing.Point(296, 268);
+            this.trackBar1.Name = "trackBar1";
+            this.trackBar1.Size = new System.Drawing.Size(188, 45);
+            this.trackBar1.TabIndex = 16;
+            this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
+            // 
+            // lblPercent
+            // 
+            this.lblPercent.AutoSize = true;
+            this.lblPercent.Location = new System.Drawing.Point(310, 333);
+            this.lblPercent.Name = "lblPercent";
+            this.lblPercent.Size = new System.Drawing.Size(78, 13);
+            this.lblPercent.TabIndex = 17;
+            this.lblPercent.Text = "Procentaje: 0%";
             // 
             // frm_combobox
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(548, 441);
+            this.ClientSize = new System.Drawing.Size(521, 433);
+            this.Controls.Add(this.lblPercent);
+            this.Controls.Add(this.trackBar1);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtDetener);
@@ -230,6 +253,7 @@
             this.Name = "frm_combobox";
             this.Text = "frm_combobox";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -253,5 +277,7 @@
         private System.Windows.Forms.Button txtDetener;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.TrackBar trackBar1;
+        private System.Windows.Forms.Label lblPercent;
     }
 }
