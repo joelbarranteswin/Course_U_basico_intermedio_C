@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FORMULARIO_MANTENIMIENTO
+namespace CapaPresentacion
 {
     internal static class Program
     {
@@ -16,7 +16,7 @@ namespace FORMULARIO_MANTENIMIENTO
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frm_interfaz());
+            Application.Run(new Form1());
         }
     }
 }
