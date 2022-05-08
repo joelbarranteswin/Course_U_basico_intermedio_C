@@ -44,7 +44,6 @@ ORDER BY Cantidad
 GO 
 
 
-
 -- see all procedures
 select top 10 * from
 sys.procedures
@@ -53,4 +52,11 @@ sys.procedures
 UPDATE PRODUCTOS SET DESCRIPCION='Nuevo nombre' WHERE ID=1
 
 
-SELECT * FROM VENTAS;
+-- EDIT VALUES FROM CLIENTES 
+UPDATE CLIENTES 
+SET NOMBRES='Mary Leyva', 
+APELLIDOS='Leyva', 
+RUC='123456789',
+DIRECCION='--', 
+TELEFONO='123456789'
+WHERE ID=4;
