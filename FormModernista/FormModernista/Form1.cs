@@ -93,6 +93,26 @@ namespace FormModernista
             AbrirFormChild(new Frm_Productos());
         }
 
-        
+        private void btnClientes_Click(object sender, EventArgs e)
+        {
+            Form formBG = new Form();
+            using (Mensaje mm = new Mensaje()) //Instace of our form called Mensaje
+            {
+                formBG.StartPosition = FormStartPosition.Manual;
+                formBG.FormBorderStyle = FormBorderStyle.None;
+                formBG.Opacity = .70d;
+                formBG.BackColor = Color.Black;
+                formBG.WindowState = FormWindowState.Maximized;
+                formBG.TopMost = true;
+                formBG.Location = this.Location;
+                formBG.ShowInTaskbar = false;
+                formBG.Show();
+
+                mm.Owner = formBG;
+                mm.ShowDialog();
+                formBG.Dispose();
+            }
+            
+        }
     }
 }
