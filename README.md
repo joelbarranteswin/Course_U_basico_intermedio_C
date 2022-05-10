@@ -3,7 +3,12 @@
 Web site donde existen muchos iconos
 - https://www.flaticon.es/
 
-Proyecto got it from:
+
+Rueda cromatica
+- https://color.adobe.com/es/create/color-wheel
+
+
+Proyectos obtenidos:
 - www.youtube.com/c/RJCodeAdvance/videos
 - www.youtube.com/c/MyCodeSpace1
 
