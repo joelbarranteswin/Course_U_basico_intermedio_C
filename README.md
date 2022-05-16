@@ -3,7 +3,9 @@
 Web site donde existen muchos iconos
 - https://www.flaticon.es/
 
-
+Imagen png
+- www.freepng.es
+ 
 Rueda cromatica
 - https://color.adobe.com/es/create/color-wheel
 

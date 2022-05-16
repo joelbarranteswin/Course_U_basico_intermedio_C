@@ -7,18 +7,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Common.Cache;
+using Domain;
 
 using System.Runtime.InteropServices;
 
-namespace Login_Transparent
-{
-    public partial class Form1 : Form
+namespace Presentation
+{ 
+    public partial class FormLogin : Form
     {
-        public Form1()
+        public FormLogin()
         {
             InitializeComponent();
         }
-        
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            
+        }
+
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
@@ -89,6 +95,47 @@ namespace Login_Transparent
             Application.Exit();
         }
 
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            if (txtUser.Text != "USUARIO")
+            {
+                if (txtPassword.Text != "CONTRASEÑA")
+                {
+                    UserModel userModel = new UserModel();
+                    var validLogin = userModel.LoginUser(user: txtUser.Text, pass: txtPassword.Text);
+                    if (validLogin == true)
+                    {
+                        FormPrincipal mainMenu = new FormPrincipal();
+                        MessageBox.Show("Bienvenido " + UserLoginCache.FirstName + ", " + UserLoginCache.LastName);
+                        mainMenu.Show();
+                        mainMenu.FormClosed += Logout;
+                        this.Hide();
+                    }
+                    else
+                    {
+                        msgError("Usuario o contraseña incorrecta \n intenta de nuevo porfavor");
+                        txtUser.Focus();
+                        txtPassword.Text = "CONTRASEÑA";
+                    }
+                }
+                else msgError("Error de Contraseña");
+            }
+            else msgError("Error de Usuario");
 
+        }
+        private void msgError(string message)
+        {
+            lblErrorMessage.Text = "       " + message;
+            lblErrorMessage.Visible = true;
+            lblErrorMessage.ForeColor = Color.Silver;
+        }
+        private void Logout(object sender, FormClosedEventArgs e)
+        {
+            txtUser.Text = "USUARIO";
+            txtPassword.Text = "CONTRASEÑA";
+            txtPassword.UseSystemPasswordChar = false;
+            lblErrorMessage.Visible = false;
+            this.Show();
+        }
     }
 }
