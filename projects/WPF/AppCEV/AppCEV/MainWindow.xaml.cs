@@ -23,6 +23,33 @@ namespace AppCEV
         public MainWindow()
         {
             InitializeComponent();
+
+            Wpf.Ui.Appearance.Theme.Apply(
+                Wpf.Ui.Appearance.ThemeType.Light,     // Theme type
+                Wpf.Ui.Appearance.BackgroundType.Mica, // Background type
+                true                                   // Whether to change accents automatically
+            );
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnClose_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
+
+        private void btnMinimize_Click(object sender, RoutedEventArgs e)
+        {
+            this.WindowState = WindowState.Minimized;
+        }
+
+        private void Window_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.LeftButton == MouseButtonState.Pressed)
+                DragMove();
         }
     }
 }
