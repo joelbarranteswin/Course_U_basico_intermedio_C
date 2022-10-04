@@ -28,5 +28,11 @@ namespace WPF_LoginForm
                   }
               };
         }
+
+        private void ApplicationMainView(object sender, StartupEventArgs e)
+        {
+            var mainView = new MainView();
+            mainView.Show();
+        }
     }
 }
