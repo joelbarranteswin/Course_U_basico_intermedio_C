@@ -5,8 +5,6 @@ VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Login", "AppCEV\Login.csproj", "{D6F8DC1B-C669-438B-830F-8CD7E4CF507A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UIDesktop", "UIDesktop\UIDesktop.csproj", "{E9BE42E3-51A4-4CD3-B979-B5BE4312D56A}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{D6F8DC1B-C669-438B-830F-8CD7E4CF507A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D6F8DC1B-C669-438B-830F-8CD7E4CF507A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D6F8DC1B-C669-438B-830F-8CD7E4CF507A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E9BE42E3-51A4-4CD3-B979-B5BE4312D56A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E9BE42E3-51A4-4CD3-B979-B5BE4312D56A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E9BE42E3-51A4-4CD3-B979-B5BE4312D56A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E9BE42E3-51A4-4CD3-B979-B5BE4312D56A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
