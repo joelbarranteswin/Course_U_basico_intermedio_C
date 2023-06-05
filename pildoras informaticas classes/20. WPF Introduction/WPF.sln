@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32825.248
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1. WPF Introduction", "WPF Introduction\1. WPF Introduction.csproj", "{AF2B1520-71B4-4BF0-A138-41699B911B51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. Stack Panel", "Stack Panel\2. Stack Panel.csproj", "{DE00227F-D65D-4D6A-8DAC-4F12C7DCEAC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3. Grid", "Grid\3. Grid.csproj", "{93D91D69-39BC-4DCB-959D-EE6F4BCC1D79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4. Dependency Properties", "Dependency Properties\4. Dependency Properties.csproj", "{CA37FC84-2D96-4FCB-9940-7E31B34B9B40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5. DataBinding", "DataBinding\5. DataBinding.csproj", "{A6F8B78F-3873-4757-85EA-DD8AF6E64F7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6. Apply Interface Property change", "Apply Interface Property change\6. Apply Interface Property change.csproj", "{820C2477-6BB9-448C-BA42-E7A3E69B44D0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AF2B1520-71B4-4BF0-A138-41699B911B51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF2B1520-71B4-4BF0-A138-41699B911B51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF2B1520-71B4-4BF0-A138-41699B911B51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF2B1520-71B4-4BF0-A138-41699B911B51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE00227F-D65D-4D6A-8DAC-4F12C7DCEAC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE00227F-D65D-4D6A-8DAC-4F12C7DCEAC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE00227F-D65D-4D6A-8DAC-4F12C7DCEAC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE00227F-D65D-4D6A-8DAC-4F12C7DCEAC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93D91D69-39BC-4DCB-959D-EE6F4BCC1D79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93D91D69-39BC-4DCB-959D-EE6F4BCC1D79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93D91D69-39BC-4DCB-959D-EE6F4BCC1D79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93D91D69-39BC-4DCB-959D-EE6F4BCC1D79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA37FC84-2D96-4FCB-9940-7E31B34B9B40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA37FC84-2D96-4FCB-9940-7E31B34B9B40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA37FC84-2D96-4FCB-9940-7E31B34B9B40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA37FC84-2D96-4FCB-9940-7E31B34B9B40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6F8B78F-3873-4757-85EA-DD8AF6E64F7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6F8B78F-3873-4757-85EA-DD8AF6E64F7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6F8B78F-3873-4757-85EA-DD8AF6E64F7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6F8B78F-3873-4757-85EA-DD8AF6E64F7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{820C2477-6BB9-448C-BA42-E7A3E69B44D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{820C2477-6BB9-448C-BA42-E7A3E69B44D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{820C2477-6BB9-448C-BA42-E7A3E69B44D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{820C2477-6BB9-448C-BA42-E7A3E69B44D0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {962CFFD7-9CD1-4986-93DE-1B7895A2D1CE}
+	EndGlobalSection
+EndGlobal

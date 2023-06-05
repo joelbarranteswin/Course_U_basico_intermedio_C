@@ -1,0 +1,32 @@
+﻿<Window x:Class="WPF_Introduction.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Introduction"
+        mc:Ignorable="d"
+        Title="Primera Interfaz" Height="450" Width="800">
+    <Grid>
+        <TextBlock x:Name="TxtBlock" Text="Hola a todos" HorizontalAlignment="Left" 
+                   Margin="147,41,0,0" TextWrapping="Wrap" 
+                   VerticalAlignment="Top" RenderTransformOrigin="-0.162,-1"
+                   FontSize="20"><Run Language="es-pe" /></TextBlock>
+        <Button x:Name="BtnChange" Content="Change" HorizontalAlignment="Left" Margin="40,40,0,0" 
+                VerticalAlignment="Top" Height="29" Width="80" Click="BtnChange_Click"/>
+        <Button x:Name="BtnHello">
+            <Button.Width>100</Button.Width>
+            <Button.Height>50</Button.Height>
+            <Button.Content>
+                <WrapPanel>
+                    <TextBlock Foreground="yellow" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="16">Click</TextBlock>
+                    <TextBlock Foreground="green">Nuevo</TextBlock>
+                    <TextBlock Foreground="blue" RenderTransformOrigin="1,0"><Run Text="Hola"/></TextBlock>
+                </WrapPanel>
+
+
+            </Button.Content>
+
+        </Button>
+
+    </Grid>
+</Window>

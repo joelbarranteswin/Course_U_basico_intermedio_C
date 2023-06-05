@@ -28,7 +28,7 @@
         </DataTemplate>
     </Window.Resources>
 
-    
+
 
     <Border CornerRadius="15"                    
             BorderThickness="2"
@@ -77,17 +77,6 @@
                                    VerticalAlignment="Center"
                                    Margin="10,0,0,0"/>
                     </StackPanel>
-                    
-                    <RadioButton Style="{StaticResource menuButton}"
-                                 Tag="{StaticResource color1}"
-                                 Command="{Binding ShowHomeViewCommand}">
-                        <StackPanel Orientation="Horizontal">
-                            <fa:IconImage Icon="Home"
-                                          Style="{StaticResource menuButtonIcon}"/>
-                            <TextBlock Text="Dashboard"
-                                       Style="{StaticResource menuButtonText}"/>
-                        </StackPanel>
-                    </RadioButton>
 
                     <RadioButton Style="{StaticResource menuButton}"
                                  Tag="{StaticResource color2}"
@@ -96,6 +85,16 @@
                             <fa:IconImage Icon="UserGroup"
                                           Style="{StaticResource menuButtonIcon}"/>
                             <TextBlock Text="Customers"
+                                       Style="{StaticResource menuButtonText}"/>
+                        </StackPanel>
+                    </RadioButton>
+                    <RadioButton Style="{StaticResource menuButton}"
+                                 Tag="{StaticResource color1}"
+                                 Command="{Binding ShowHomeViewCommand}">
+                        <StackPanel Orientation="Horizontal">
+                            <fa:IconImage Icon="Home"
+                                          Style="{StaticResource menuButtonIcon}"/>
+                            <TextBlock Text="Dashboard"
                                        Style="{StaticResource menuButtonText}"/>
                         </StackPanel>
                     </RadioButton>
@@ -208,11 +207,12 @@
                                 Margin="0,0,5,0"
                                 MouseLeftButtonDown="pnlControlBar_MouseLeftButtonDown"     
                                 MouseEnter="pnlControlBar_MouseEnter">
-                        
+
                         <Button x:Name="btnClose"
                                 Style="{StaticResource controlButton}"
                                 Tag="{StaticResource color4}"
-                                Click="btnClose_Click">
+                                Click="btnClose_Click"
+                                >
                             <fa:IconImage Icon="Xmark" 
                                           Style="{StaticResource controlButtonIcon}"/>
                         </Button>
@@ -224,17 +224,18 @@
                             <fa:IconImage Icon="Square" 
                                           Style="{StaticResource controlButtonIcon}"/>
                         </Button>
-                        
+
                         <Button x:Name="btnMinimize"
                                 Style="{StaticResource controlButton}"
                                 Tag="{StaticResource color8}"
                                 Click="btnMinimize_Click">
-                            <fa:IconImage Icon="WindowMinimize" Width="12" 
+                            <fa:IconImage Icon="WindowMinimize" 
+                                          Width="12" 
                                           Style="{StaticResource controlButtonIcon}"/>
                         </Button>
 
                     </StackPanel>
- 
+
                     <!--Header / Caption-->
                     <Grid Grid.Row="1">
                         <Grid.ColumnDefinitions>
@@ -256,7 +257,7 @@
                                        FontSize="16"
                                        FontFamily="Montserrat"
                                        FontWeight="Medium"
-                                       VerticalAlignment="Center"/>       
+                                       VerticalAlignment="Center"/>
 
                         </StackPanel>
 
@@ -266,7 +267,7 @@
                                     FlowDirection="RightToLeft"
                                     VerticalAlignment="Center"
                                     Margin="0,0,10,0">
-                            
+
                             <Button Style="{StaticResource iconButton}"
                                     Tag="{StaticResource color1}">
                                 <fa:IconImage Icon="AngleDown"
@@ -289,17 +290,17 @@
                                         ImageSource="/Images/joel_barrantes.png"/>
                                 </Ellipse.Fill>
                             </Ellipse>
-                            
+
                             <Button Style="{StaticResource iconButton}"
                                     Tag="{StaticResource color3}">
                                 <fa:IconImage Icon="Clock" Style="{StaticResource iconButtonIcon}"/>
                             </Button>
-                            
+
                             <Button Style="{StaticResource iconButton}"
                                     Tag="{StaticResource color4}">
                                 <fa:IconImage Icon="Envelope" Style="{StaticResource iconButtonIcon}"/>
                             </Button>
-                            
+
                             <Button Style="{StaticResource iconButton}"
                                     Tag="{StaticResource color5}">
                                 <fa:IconImage Icon="Bell" Style="{StaticResource iconButtonIcon}"/>
@@ -308,18 +309,18 @@
                         </StackPanel>
                     </Grid>
 
-                    
+
                     <!--Content section / Child views-->
                     <ContentControl Content="{Binding CurrentChildView}"
                                     Grid.Row="2"
                                     Margin="25"/>
 
                 </Grid>
-                    
-                    
-                
-                
-                
+
+
+
+
+
             </Border>
         </Grid>
     </Border>

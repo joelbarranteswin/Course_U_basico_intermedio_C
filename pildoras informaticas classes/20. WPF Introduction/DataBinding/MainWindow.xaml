@@ -1,0 +1,20 @@
+﻿<Window x:Class="DataBinding.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DataBinding"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <TextBox Width="100" Name="MyChart"
+                 Margin="160" 
+                 Text="{
+            Binding ElementName=MySlider,
+            Path=Value, Mode=TwoWay, StringFormat=F2
+            }"/>
+        <Slider Width="350" Name="MySlider"
+                Minimum="0" Maximum="100"/>
+
+    </StackPanel>
+</Window>
